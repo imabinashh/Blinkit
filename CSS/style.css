@@ -146,7 +146,7 @@ header{
 
 .all-categories{
     max-width: 1280px;
-    margin: auto;
+    margin: 15px auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -160,6 +160,190 @@ header{
     cursor: pointer;
 }
 
+/* ---Footer--- */
+
+footer{
+    padding: 40px 0px 0px 0px;
+}
+
+.footer-mid{
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ---footer top--- */
+
+.footer-one{
+    width: 100%;
+    display: flex;
+}
+
+/* ----footer one left---- */
+.footer-one-left{
+    flex-basis: 30%;
+    padding: 0px 20px;
+
+}
+
+.footer-one-left .left-links{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-one-left .left-links ul{
+    list-style: none;
+    padding-right: 25px;
+}
+
+.footer-one-left .left-links li{
+    margin-bottom: 10px;
+}
+
+.footer-one-left .left-links a{
+    text-decoration: none;
+    color: #00000075;
+    
+}
+
+/* ----footer one right---- */
+
+.footer-one-right{
+    flex-basis: 70%;
+    /* padding: 0px 30px; */
+}
+
+.footer-one-right .right-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-one-right h3{
+    padding-right: 60px;
+    
+}
+
+.footer-one-right h3 a{
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 15px;
+    color: green;
+    
+}
+
+.footer-one-right .right-links ul{
+    list-style: none;
+    padding-right: 60px;
+}
+
+.footer-one-right .right-links li{
+    margin-bottom: 10px;
+}
+
+.footer-one-right .right-links a{
+    text-decoration: none;
+    color: #00000075;
+    
+}
+
+/* ------footer two------ */
+
+.footer-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    padding: 24px 30px;
+    background-color: #fcfcfc;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+/* Left: Copyright text */
+.footer-two-left p {
+    font-size: 13px;
+    color: #666666;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Right: Combined Container */
+.footer-two-right {
+    display: flex;
+    align-items: center;
+    gap: 32px; /* Clean gap between app badges and social icons */
+}
+
+/* Download App Badges */
+.footer-two-right .download-app {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-two-right .download-app p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.footer-two-right .download-app img {
+    height: 32px;
+    width: auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* Social Media Badges */
+.footer-two-right .social-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-two-right .social-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    flex-shrink: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-two-right .social-links a:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* footer bottom */
+.footer-bottom {
+    padding: 20px;
+    text-align: start;
+    font-size: 16px;
+    color: #666666;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* --- Mobile Footer (Hidden on Desktop) --- */
+.footer-mobile {
+    display: none;
+}
 
 
 
@@ -174,7 +358,7 @@ header{
 /* Media Queries for Responsive Design */
 
 
-@media only screen and (min-width: 200px) and (max-width: 600px) { 
+@media only screen and (max-width: 600px) { 
     
     header {
         display: flex;
@@ -182,8 +366,8 @@ header{
         align-items: stretch;
         width: 100%;
         box-sizing: border-box;
-        padding: 12px 16px;       /* 16px creates the left and right outer margin */
-        border: none;             /* Removes the desktop border line */
+        padding: 12px 16px;
+        border: none;
     }
 
     .header-left {
@@ -201,8 +385,8 @@ header{
         align-items: center;
         width: 100%;
         box-sizing: border-box;
-        padding: 0;               /* Remove desktop padding so it aligns with the search box */
-        margin-bottom: 12px;      /* Space between the address and the search bar */
+        padding: 0;
+        margin-bottom: 12px;
     }
 
     .header-address-icon {
@@ -214,29 +398,75 @@ header{
     }
 
     .searchbox {
-        margin: 0;                /* Overrides desktop margin-left: 20px */
-        width: 100%;              /* Fills exactly within the header's 16px margins */
+        margin: 0;
+        width: 100%;
         box-sizing: border-box;
     }
 
-    .searchbox button{
-        padding: 12px;          /* Adjust button padding for better touch targets */
-        font-size: 16px;             /* Ensure button text is readable on small screens */
+    .searchbox button {
+        padding: 12px;
+        font-size: 16px;
     }
 
-    .header-btn,
-    .header-btn-login,
-    .header-btn-cart {
+    .header-btn {
         display: none !important;
     }
 
-    .shopping-banner {
-        display: none;             /* Adjusts spacing for smaller screens */
+    .shopping-banner,
+    .shopping-categories {
+        display: none;
     }
 
-    .shopping-categories{
-        display: none;             /* Adjusts spacing for smaller screens */
+    .all-categories-items {
+        flex-basis: 25%;
     }
 
+    /* --- FOOTER TOGGLE --- */
 
+    /* 1. Hide entire desktop footer wrapper */
+    .footer-mid {
+        display: none !important;
+    }
+
+    /* 2. Reset footer padding for edge-to-edge image */
+    footer {
+        padding: 0;
+    }
+
+    /* 3. Show and layout mobile footer */
+    .footer-mobile {
+        display: flex !important;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fbfbfb;
+    }
+
+    .footer-mobile img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .mobile-accordion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 20px;
+        background-color: #ffffff;
+        border-top: 1px solid #eeeeee;
+        border-bottom: 1px solid #e0e0e0;
+        font-size: 14px;
+        font-weight: 600;
+        color: #4b5563;
+        cursor: pointer;
+    }
+
+    .mobile-accordion p {
+        margin: 0;
+    }
+
+    .mobile-accordion i {
+        color: #6b7280;
+        font-size: 16px;
+    }
 }
