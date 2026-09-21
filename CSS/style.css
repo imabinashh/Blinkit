@@ -106,9 +106,72 @@ header{
     gap: 8px;
 }
 
+/* ---shopping Banner--- */
+
+.shopping-banner {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.shopping-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+
+/* ---shopping Categories--- */
+
+.shopping-categories {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    
+}
+
+.shopping-categories-item {
+    flex-basis: 27%;
+    margin: 10px;
+}
+
+.shopping-categories-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+/* ---All Categories--- */
+
+.all-categories{
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.all-categories-items{
+    flex-basis: 10%;
+}
+
+.all-categories-items img{
+    width: 100%;
+    cursor: pointer;
+}
 
 
 
+
+
+
+
+
+
+
+
+
+/* Media Queries for Responsive Design */
 
 
 @media only screen and (min-width: 200px) and (max-width: 600px) { 
@@ -160,10 +223,20 @@ header{
         padding: 12px;          /* Adjust button padding for better touch targets */
         font-size: 16px;             /* Ensure button text is readable on small screens */
     }
-    
+
     .header-btn,
     .header-btn-login,
     .header-btn-cart {
         display: none !important;
     }
+
+    .shopping-banner {
+        display: none;             /* Adjusts spacing for smaller screens */
+    }
+
+    .shopping-categories{
+        display: none;             /* Adjusts spacing for smaller screens */
+    }
+
+
 }
