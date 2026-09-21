@@ -1,0 +1,35 @@
+@media only screen and (min-width: 200px) and (max-width: 600px) { 
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch; /* Stretches children to full width */
+        width: 100%;
+    }
+
+    .header-left {
+        display: flex;
+        width: 100%;           /* Allows header-left to take full width */
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .header-address {
+        margin: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;           /* Stretches across the entire row */
+        box-sizing: border-box; /* Ensures padding does not cause horizontal overflow */
+        padding: 10px 16px;
+    }
+
+    .header-address-icon {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+}

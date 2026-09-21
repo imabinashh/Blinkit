@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    padding: 22px 30px;
+    border-right: 1px solid #ccc;
+}
+
+.header-address{
+    padding: 20px 30px;
+}
+
+.header-address h3{
+    font-size: 18px;
+    font-weight:930px;
+    margin-bottom: 6px;
+}
+
+.header-address p{
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.header-address-icon{
+    display: none;
+}
+   
+   
